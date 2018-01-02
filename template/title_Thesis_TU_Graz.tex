@@ -33,12 +33,15 @@
 
 \vfill
 
-{\LARGE\bfseries\mytitle}
+{\Huge\bfseries\mytitle}
 
 \vfill\vfill\vfill
 
 {\bfseries\myworktitle}
 
+\vfill\vfill\vfill
+\vfill\vfill\vfill
+\vfill\vfill\vfill
 \vfill\vfill\vfill
 \vfill\vfill\vfill
 \vfill\vfill\vfill
@@ -48,29 +51,36 @@
 \vfill
 
 \myinstitute\\
-Head: \myinstitutehead\\
+
+\vfill
+\vfill
+\vfill
+
+\myinstitutehead\\
 
 \vfill
 
-Supervisor: \mysupervisor\\
+% \mysupervisor\\
 %usually not mentioned on titlepage:% Evaluator: \myevaluator
 
 \vfill
 
-\mysubmissiontown, \mysubmissionmonth~\mysubmissionyear
+%\mysubmissiontown, \mysubmissionmonth~\mysubmissionyear
 
 \end{center}
 \end{titlepage}
 
-%% if myaddcolophon is set to "true", colophon is added:
-\ifthenelse{\boolean{myaddcolophon}}{
-  \newpage
-  \thispagestyle{empty}  %% no page header or footer
 
-  ~
-  \vfill
-  \mycolophon
-}{}
+
+%% if myaddcolophon is set to "true", colophon is added:
+%\ifthenelse{\boolean{myaddcolophon}}{
+%  \newpage
+%  \thispagestyle{empty}  %% no page header or footer
+%
+%  ~
+%  \vfill
+%  \mycolophon
+%}{}
 \newpage
 
 %% end of title page
